@@ -1,5 +1,6 @@
 package com.study.springbootboard.controller;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 // @WebMvcTest  // 슬라이스 테스트로 controller 와 연관 없는 bean 들을 load 하지 않음
                 // => DataConfig 의 AutoConfig 를 읽지 않음
                 // => 이럴때 가장 쉬운 방법은 Test 를 integrateTest로 작성하는 방법이 있음
+@Disabled("Spring Data REST 통합테스트는 불필요하므로 제외시킴")
 @DisplayName("Data Rest - API 테스트")
 @Transactional  // Rollback
 @AutoConfigureMockMvc
