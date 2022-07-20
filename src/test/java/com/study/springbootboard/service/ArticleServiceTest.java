@@ -3,7 +3,7 @@ package com.study.springbootboard.service;
 import com.study.springbootboard.domain.Article;
 import com.study.springbootboard.domain.type.SearchType;
 import com.study.springbootboard.dto.ArticleDto;
-import com.study.springbootboard.dto.ArticleUpdateDto;
+import com.study.springbootboard.dto.ArticleWithCommentsDto;
 import com.study.springbootboard.repository.ArticleRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -71,7 +70,7 @@ class ArticleServiceTest {
         given(articleRepository.save(any(Article.class))).willReturn(null);
 
         // When
-        sut.updateArticle(1L, ArticleUpdateDto.of("title", "content", "#java"));
+        sut.updateArticle(1L, ArticleWithCommentsDto.of("title", "content", "#java"));
 
         // Then
         then(articleRepository).should().save(any(Article.class));
