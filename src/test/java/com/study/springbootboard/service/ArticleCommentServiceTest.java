@@ -2,7 +2,9 @@ package com.study.springbootboard.service;
 
 import com.study.springbootboard.domain.Article;
 import com.study.springbootboard.domain.ArticleComment;
+import com.study.springbootboard.domain.UserAccount;
 import com.study.springbootboard.dto.ArticleCommentDto;
+import com.study.springbootboard.dto.UserAccountDto;
 import com.study.springbootboard.repository.ArticleCommentRepository;
 import com.study.springbootboard.repository.ArticleRepository;
 import org.junit.jupiter.api.DisplayName;
