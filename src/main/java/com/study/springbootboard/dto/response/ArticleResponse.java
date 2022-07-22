@@ -1,4 +1,4 @@
-package com.study.springbootboard.response;
+package com.study.springbootboard.dto.response;
 
 import com.study.springbootboard.dto.ArticleDto;
 

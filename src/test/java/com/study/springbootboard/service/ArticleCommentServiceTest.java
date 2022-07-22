@@ -34,10 +34,9 @@ class ArticleCommentServiceTest {
 
     @DisplayName("게시글 ID로 조회하면, 해당하는 댓글 리스트를 반환한다.")
     @Test
-    void givenArticleId_whenSearchingComments_thenReturnsArticleComments() {
+    void givenArticleId_whenSearchingArticleComments_thenReturnsArticleComments() {
         // Given
         Long articleId = 1L;
-
         ArticleComment expected = createArticleComment("content");
         given(articleCommentRepository.findByArticle_Id(articleId)).willReturn(List.of(expected));
 
@@ -138,24 +137,24 @@ class ArticleCommentServiceTest {
                 createUserAccountDto(),
                 content,
                 LocalDateTime.now(),
-                "uno",
+                "nana",
                 LocalDateTime.now(),
-                "uno"
+                "nana"
         );
     }
 
     private UserAccountDto createUserAccountDto() {
         return UserAccountDto.of(
                 1L,
-                "uno",
+                "nana",
                 "password",
-                "uno@mail.com",
-                "Uno",
+                "nana@mail.com",
+                "nana",
                 "This is memo",
                 LocalDateTime.now(),
-                "uno",
+                "nana",
                 LocalDateTime.now(),
-                "uno"
+                "nana"
         );
     }
 
@@ -169,10 +168,10 @@ class ArticleCommentServiceTest {
 
     private UserAccount createUserAccount() {
         return UserAccount.of(
-                "uno",
+                "nana",
                 "password",
-                "uno@email.com",
-                "Uno",
+                "nana@email.com",
+                "nana",
                 null
         );
     }

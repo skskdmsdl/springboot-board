@@ -25,17 +25,19 @@ public class Article extends AuditingFields {
     private Long id;
 
     @Setter @ManyToOne(optional = false) private UserAccount userAccount; // 유저 정보 (ID)
-    @Setter @Column(nullable = false) private String title;   // 제목
+    
+    @Setter @Column(nullable = false) private String title; // 제목
     @Setter @Column(nullable = false, length = 10000) private String content; // 본문
 
     // Entity class 안의 모든 필드는 컬럼으로 간주하기에
     // 옵션설정이 필요하지 않으면 @Column 작성 안해도 됨
     @Setter private String hashtag; // 해시태그
 
+    @ToString.Exclude
     @OrderBy("createdAt DESC")
     @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
-    @ToString.Exclude
     private final Set<ArticleComment> articleComments = new LinkedHashSet<>();
+
 
     protected Article() {}
 
@@ -66,4 +68,5 @@ public class Article extends AuditingFields {
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }

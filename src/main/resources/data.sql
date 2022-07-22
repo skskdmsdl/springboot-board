@@ -1,7 +1,7 @@
 -- 테스트 계정
 -- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
 insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
-('uno', 'asdf1234', 'Uno', 'uno@mail.com', 'I am Uno.', now(), 'uno', now(), 'uno')
+('nana', 'asdf1234', 'nana', 'nana@mail.com', 'I am nana.', now(), 'nana', now(), 'nana')
 ;
 
 -- 123 게시글
@@ -263,7 +263,7 @@ insert into article_comment (article_id, user_account_id, content, created_at, m
 (120, 1, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', '2021-08-21 08:39:39', '2021-11-17 22:47:35', 'Sydney', 'Boony'),
 (123, 1, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2021-06-17 10:57:29', '2021-05-13 12:28:47', 'Burk', 'Markus'),
 (39, 1, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2022-01-15 11:37:12', '2021-02-19 17:42:22', 'Calvin', 'Garreth'),
-(30, 1, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2021-11-23 18:29:30', '2021-03-09 00:57:27', 'Kain', 'Bruno'),
+(30, 1, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2021-11-23 18:29:30', '2021-03-09 00:57:27', 'Kain', 'Brnana'),
 (57, 1, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2021-03-19 18:39:02', '2021-03-16 17:47:17', 'Kippie', 'Alexio'),
 (41, 1, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2021-03-21 16:34:30', '2021-03-17 15:18:55', 'Frannie', 'Horacio'),
 (100, 1, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2021-02-24 16:53:08', '2021-05-09 06:00:58', 'Osborn', 'Pren'),
@@ -538,7 +538,7 @@ insert into article_comment (article_id, user_account_id, content, created_at, m
 (118, 1, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2021-04-06 13:22:24', '2021-03-22 21:55:23', 'Derward', 'Gilberto'),
 (80, 1, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', '2021-11-11 14:40:19', '2021-03-18 04:28:34', 'Raynard', 'Harmon'),
 (15, 1, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2021-08-03 10:39:41', '2021-10-10 14:36:42', 'Link', 'Herculie'),
-(53, 1, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2021-10-16 21:35:19', '2021-02-03 11:50:26', 'Bruno', 'Morry'),
+(53, 1, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2021-10-16 21:35:19', '2021-02-03 11:50:26', 'Brnana', 'Morry'),
 (116, 1, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', '2021-06-30 09:33:06', '2021-03-14 15:57:56', 'Ash', 'Kain'),
 (18, 1, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2021-12-17 04:35:08', '2021-12-03 02:48:23', 'Vance', 'Sherwood'),
 (39, 1, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', '2022-01-24 11:08:07', '2021-03-10 17:24:44', 'Alexio', 'Zak'),
