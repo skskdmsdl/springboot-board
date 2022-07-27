@@ -17,6 +17,7 @@ public record ArticleCommentDto(
         LocalDateTime modifiedAt,
         String modifiedBy
 ) {
+
     public static ArticleCommentDto of(Long articleId, UserAccountDto userAccountDto, String content) {
         return new ArticleCommentDto(null, articleId, userAccountDto, content, null, null, null, null);
     }
@@ -37,11 +38,12 @@ public record ArticleCommentDto(
         );
     }
 
-    public ArticleComment toEntity(Article article, UserAccount userAccount) {
+    public ArticleComment toEntity(Article entity) {
         return ArticleComment.of(
-                article,
-                userAccount,
+                entity,
+                userAccountDto.toEntity(),
                 content
         );
     }
+
 }
