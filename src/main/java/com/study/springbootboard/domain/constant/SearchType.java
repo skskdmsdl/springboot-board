@@ -1,4 +1,4 @@
-package com.study.springbootboard.domain.type;
+package com.study.springbootboard.domain.constant;
 
 import lombok.Getter;
 
