@@ -58,11 +58,10 @@ public class Article extends AuditingFields {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Article article)) return false;
+        if (!(o instanceof Article that)) return false;
         // 새로 만든 entity 가 영속화 되지 않았다면 entity는 동등성 검사를 탈락한다.
         // id 가 부여(영속성 부여)되지 않았으면 동등하지 않다.
-        return id != null && id.equals(article.id);
-    }
+        return id != null && id.equals(that.getId());    }
 
     @Override
     public int hashCode() {
