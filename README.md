@@ -4,7 +4,7 @@
 * Intellij IDEA Ultimate 2022.1.3
 * Java 17
 * Gradle 7.4.1
-Spring Boot 2.7.1
+* Spring Boot 2.7.1
 
 ## 기술 세부 스택
 Spring Boot
@@ -27,3 +27,5 @@ Spring Boot
 
 ## 데모 페이지
 * https://springboot-board.herokuapp.com/
+* 계정 정보 - nana/asdf1234
+
