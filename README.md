@@ -27,5 +27,6 @@ Spring Boot
 
 ## 데모 페이지
 * https://springboot-board.herokuapp.com/
-* 계정 정보 - nana/asdf1234
-
+* 계정 정보
+   * id : nana
+   * pw : asdf1234
